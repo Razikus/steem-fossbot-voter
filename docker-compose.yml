@@ -1,0 +1,20 @@
+version: '3'
+services:
+	steem:
+		image: razikus/steembot
+		environment:
+		 - STEEM_USER=NONE
+		 - POSTING_KEY_PRV=NONE
+		 - BOT_API_KEY=NONE
+		 - COOKIE_SECRET=NONE
+		 - VERBOSE_LOGGING=true
+		 - MONGODB_URI=mongodb
+	mongodb:
+		image: tutum/mongodb
+		environment:
+		 - MONGODB_PASS=admin
+		 - MONGODB_DATABASE=steem
+
+
+
+			
