@@ -8,6 +8,6 @@ ENV POSTING_KEY_PRV=NONENONE
 ENV BOT_API_KEY=NONENONE
 ENV COOKIE_SECRET="mycookiesecretkeyblala"
 ENV VERBOSE_LOGGING=true
-ENV MONGODB_URI="mongodb"
+ENV MONGODB_URI="mongodb://admin:admin@mongodb:27017/steem"
 
 ENTRYPOINT ["node", "/steem/server.js"]
